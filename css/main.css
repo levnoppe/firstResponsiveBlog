@@ -1,0 +1,176 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+width:3em;
+text-decoration: none;
+}
+
+
+a{
+  font-size: 1em;
+  /* margin-left: 1em; */
+  /* vertical-align: middle; */
+}
+#facebook{color:#3B5998; text-decoration: none;}
+#twitter{color:#00acee; text-decoration: none;}
+#digg{color:#dd4b39; text-decoration: none;}
+#googleplus{color:#ea4c89; text-decoration: none;} 
+
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  background: radial-gradient(circle, rgb(243, 201, 201), rgb(241, 241, 176), rgb(190, 252, 190));
+
+
+}
+
+article {
+  max-width: 50em;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+header{
+  display:flex;
+  vertical-align: middle;
+  
+}
+
+#victory{
+  margin-left: 1em;
+  margin-top: 3em;
+  margin-bottom:2em;
+
+
+}
+
+h1 {
+  text-align: center;
+  font-weight:bold;
+  letter-spacing: 0.8vw;
+  margin-top:2.5em;
+  margin-bottom:2em;
+  margin-left: 1em;
+
+
+  /* text-indent: 1em; */
+}
+
+h2 {
+  
+  font-weight:bold;
+  letter-spacing: 0.3em;
+
+/* text-indent: 4em; */
+/* text-decoration:  */
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 0.5em;
+
+}
+
+picture{
+margin-top:3em;
+  max-width:100%;
+
+}
+
+picture > p{
+  font-style: italic;
+font-weight:500;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 2em;
+}
+
+
+article > p{
+  text-indent: 1em;
+  text-align: justify;
+  text-justify: inter-word  ;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 1.6;
+
+}
+
+
+hr.style1{
+  max-width:100%;
+  width: 60%;
+  margin-left: 20%; 
+  margin-right: 20%; 
+  margin-top:2em;
+  margin-bottom: 3em;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+footer {
+  /* position:fixed; */
+  left:0px;
+  bottom:0px;
+  height:5em;
+  width:100%;
+  background:rgb(170, 208, 233);
+}
+
+
+@media screen and (min-width:801px){
+  article, header {
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  footer {
+ 
+    height:2.5em;
+ 
+  }
+}
+
+@media screen and (max-width:475px){
+  h1 {
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    margin-bottom:1em;
+    margin-left: 0em;
+
+  }
+  #victory{
+    margin-left: 0em;
+    width:40px;
+    height:40px;
+    
+
+  }
+  h2 {
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+  }
+
+}
+
+
+
+/* div.image {max-width: 100%;max-height: 100%;background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Mi45MjcgNDkyLjkyNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkyLjkyNyA0OTIuOTI3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGcgaWQ9IlhNTElEXzI3Ml8iPgoJPHBhdGggaWQ9IlhNTElEXzI3Nl8iIGQ9Ik00MDkuNTU2LDQwNi4yMTZjNi45Mi0yNy41Nyw3LjM4Ny01NS45MTEsMS41MTgtODMuNzI1Yy03LjY3MS0zNi4zNTgtMTguMTkxLTgxLjg3MS0xOS40MzMtODcuNDc3ICAgYy0yLjY3OC0xMi4wMDItMTEuNzg3LTIwLjkwMS0yMi45NTktMjMuOTU1bC0xMjUuNjI4LDIwLjcwN2MtMi44ODQsMC40NzQtNS41NzksMS40ODItOC4xMzEsMi43NSAgIGMtNC4xOTgsMi4wNi03LjkwMyw1LjAxMS0xMC43MDgsOC44OTljLTQuNDkxLDYuMjY5LTYuMzAxLDEzLjkwOC01LjA2OCwyMS41MzJjMi4wODQsMTIuNjkxLDEyLjI5OSwyMi4wOTYsMjQuNTQ5LDIzLjgzNCAgIGMyLjgyMiwwLjQwMiw1LjY5MywwLjUzMSw4LjYyNSwwLjA0OWw1Mi4yMzktOC41MDZjNC41MDQtMC43MTMsOC42MSwyLjg2OSw5LjIwNSw2LjYzMWMwLjcyMSw0LjM4NS0yLjI0NSw4LjUxNC02LjYyNCw5LjIyOCAgIGwtNTIuMjM4LDguNTA3Yy02LjM3OSwxLjA2Ni04LjczOCwwLjQzMi0xMC45ODQsMC4yNTZjLTAuNjI1LDUuMzE1LTEuOTcsMTAuNTU3LTQuMzkxLDE1LjUyICAgYy01LjY0NSwxMS41NjktMTUuNDU3LDIwLjI0NC0yNy42MjksMjQuNDEyYy0xMy4wNjcsNC41MDYtMjcuMTkxLDMuMjA3LTM5LjIwMi0zLjYzMWMtNS41OTcsNy40NDctMTMuMzI1LDEzLjI5OS0yMi40NDgsMTYuNDgyICAgYy0xMS4wOTIsMy44NDktMjIuOTEsMy43MTEtMzQuNjMyLTEuMjczbDI4LjI4NCw4Mi4zMDljMTEuMTA5LDMyLjQwNiw0MS42MDksNTQuMTYzLDc1Ljg3MSw1NC4xNjNoMTA1LjQ1NyAgIGMzNi41NzIsMCw2OC41MjctMjQuNzQ3LDc3LjY2Ni02MC4xNzVMNDA5LjU1Niw0MDYuMjE2eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzI3M18iIGQ9Ik0xNDQuOTQxLDM0Mi41NTljMTMuNzctNC43ODYsMjIuMDYzLTE4LjAyMiwyMS4zOTEtMzEuODY2YzYuMTcyLDE2LjE3OCwyMy45MDYsMjQuNjY5LDQwLjMzOCwxOSAgIGMxMi44NDQtNC40MTcsMjEuMDIzLTE2LjE3MiwyMS42LTI4Ljk2NmMtMTIuODkzLTYuMTY1LTIyLjUxNC0xOC4xOTEtMjQuOTY1LTMzLjE5MWMtMS4zOTctOC42MDItMC4yMjctMTcuMTk2LDMuMTQzLTI1LjAwNiAgIGMxLjI2Ni0yLjk0OSwyLjgwNS01LjgxOSw0LjczLTguNDk3YzcuMDIzLTkuNzU2LDE3LjQxLTE2LjE4OCwyOS4yOTUtMTguMTE4bDMwLTQuOTQ4bDc3LjIxNy0xMi43M2wzMS43MTgtMTM1LjgyNSAgIGM0LjUyMi0xOS40MzktNy41NTQtMzguODc1LTI2Ljk4Ny00My40MTJjLTE5LjQzMi00LjU2Mi0zOC44ODMsNy41NDUtNDMuNDE4LDI2Ljk3OEwyNzEuMTI5LDIwOC4yMUwyMDguNzcxLDI0LjUzOSAgIGMtNi40MjgtMTguODk2LTI2Ljg3My0yOS4wNDUtNDUuODU3LTIyLjYwMWMtMTguOTA0LDYuNDE0LTI5LjAyMSwyNi45MzktMjIuNTkyLDQ1LjgzNGwzNS40OTgsMTA0LjU5bDcuOTIyLDIzLjMzOSAgIGMtNS45NjUtNS44NDYtMTMuODA3LTkuNDkzLTIyLjI1Ni05LjQ5M2MtMy40NjEsMC02Ljk5LDAuNTY5LTEwLjQzOCwxLjc2NWMtMTYuNzg1LDUuNzY1LTI1LjcyMSwyNC4wNDMtMTkuOTQzLDQwLjgyM2w1LjE3NiwxNS4wNCAgIGMtNi4wMjktOC43NTYtMTUuOTg0LTEzLjk5OC0yNi40NzEtMTMuOTk4Yy0zLjQ2NSwwLTcuMDA4LDAuNTY3LTEwLjQ1NSwxLjc4Yy0xNi43NzEsNS44MzUtMjUuNjA1LDI0LjE0Ny0xOS43Nyw0MC45MDEgICBsMjQuNDY3LDcwLjI3QzEwOS45MDcsMzM5LjY3MywxMjguMzYxLDM0OC4zNjQsMTQ0Ljk0MSwzNDIuNTU5eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)} */
